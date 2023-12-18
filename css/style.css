@@ -12,7 +12,9 @@
     --font-accent: 'Avenir', sans-serif;
 
 }
-
+html,body{
+    height: 100%;
+}
 body {
     background: linear-gradient(180deg,
             rgba(0, 153, 136, 0.00) 0%, rgba(77, 183, 172, 0.00) 21.59%,
@@ -102,11 +104,10 @@ header {
     width: 879px;
     display: flex;
     justify-content: space-between;
-    position: relative;
 }
 
 .sub-menu {
-    opacity: 0; /* Начальное значение непрозрачности */
+    opacity: 0; 
     width: 256px;
     min-height: 553px;
     position: absolute;
@@ -115,14 +116,14 @@ header {
     background-color: var(--font-white);
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     z-index: 1;
-    visibility: hidden; /* Изначально скрываем подменю */
-    transition: opacity 0.3s ease, visibility 0s 0.3s; /* Плавное появление и задержка перед исчезновением */
+    visibility: hidden; 
+    transition: opacity 0.3s ease, visibility 0s 0.3s;
 }
 
 .header__nav-list:hover .sub-menu {
-    opacity: 1; /* Показываем подменю при наведении */
-    visibility: visible; /* Делаем подменю видимым */
-    transition: opacity 0.3s ease, visibility 0s; /* Плавное исчезновение без задержки */
+    opacity: 1; 
+    visibility: visible; 
+    transition: opacity 0.3s ease, visibility 0s; 
 }
 
 
@@ -457,7 +458,7 @@ footer {
     height: 32px;
     border-radius: 16px;
     border: 1px solid rgba(3, 169, 244, 0.50);
-    background: var(--bg-color);
+    background: #098;;
     color: #FFF;
 
     display: flex;
